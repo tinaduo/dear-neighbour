@@ -11,7 +11,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="flex w-screen flex-row px-8 py-16 justify-between relative z-40">
+      <nav className="flex w-screen flex-row px-8 py-6 justify-between relative z-40">
         <svg
           width="31"
           height="27"

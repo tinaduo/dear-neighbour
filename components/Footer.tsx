@@ -10,7 +10,7 @@ const Footer: React.FC = () => (
         <div className='flex flex-col gap-2'>
             <a
                 href="https://www.instagram.com/_dearneighbour/"
-                className="text-[#FAF8EF] text-2xl font-['FavoritMono'] uppercase"
+                className="text-[#FAF8EF] text-xl font-['FavoritMono'] uppercase"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -18,7 +18,7 @@ const Footer: React.FC = () => (
             </a>
             <a
                 href="mailto:dear.neighbour@outlook.com"
-                className="text-[#FAF8EF] text-2xl font-['FavoritMono'] uppercase"
+                className="text-[#FAF8EF] text-xl font-['FavoritMono'] uppercase"
                 target="_blank"
                 rel="noopener noreferrer"
             >

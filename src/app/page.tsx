@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
     <NavBar />
-    <main className="flex flex-col mx-4 items-center justify-center min-h-screen space-y-32 my-32">
+    <main className="flex flex-col mx-4 items-center justify-center min-h-screen space-y-32 my-16">
       <section>
         <Image
           src="/images/placeholder/mobile-hero.png"
@@ -37,22 +37,22 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap justify-left gap-2 pt-4 w-8/12">
           <div className="p-2 outline-1 outline-[#1E1E1E] outline-dashed justify-center items-center w-fit">
-            <p className="text-center justify-center text-[#1E1E1E] text-s font-normal font-['FavoritMono'] uppercase">
+            <p className="text-center justify-center text-[#1E1E1E] text-sm font-normal font-['FavoritMono'] uppercase">
               Website Design
             </p>
           </div>
           <div className="p-2 outline-1 outline-[#1E1E1E] outline-dashed justify-center items-center w-fit">
-            <p className="text-center justify-center text-[#1E1E1E] text-s font-normal font-['FavoritMono'] uppercase">
+            <p className="text-center justify-center text-[#1E1E1E] text-sm font-normal font-['FavoritMono'] uppercase">
               Branding/Visual Identity
             </p>
           </div>
           <div className="p-2 outline-1 outline-[#1E1E1E] outline-dashed justify-center items-center w-fit">
-            <p className="text-center justify-center text-[#1E1E1E] text-s font-normal font-['FavoritMono'] uppercase">
+            <p className="text-center justify-center text-[#1E1E1E] text-sm font-normal font-['FavoritMono'] uppercase">
               Digital Marketing
             </p>
           </div>
           <div className="p-2 outline-1 outline-[#1E1E1E] outline-dashed justify-center items-center w-fit">
-            <p className="text-center justify-center text-[#1E1E1E] text-s font-normal font-['FavoritMono'] uppercase">
+            <p className="text-center justify-center text-[#1E1E1E] text-sm font-normal font-['FavoritMono'] uppercase">
               Print Collateral
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* conclusion section */}
-      <section className="flex flex-col">
+      <section className="flex flex-col gap-8">
         <div>
           <h2 className="text-[#1E1E1E] text-4xl font-medium font-['Roobert']">
             That’s us in a nutshell. Thanks for being here, and we can’t wait to learn more about you!<br /><br />With love,<br />Your dear neighbour &lt;3
@@ -120,7 +120,7 @@ export default function Home() {
         <img
           src="/images/placeholder/mobile-footer.png"
           alt="Conclusion Image"
-          className="mb-4 w-screen object-cover"
+          className="w-screen pt-12 object-cover"
         />
       </section>
     </main>
