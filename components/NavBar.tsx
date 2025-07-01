@@ -12,8 +12,10 @@ const NavBar = () => {
   };
 
   return (
+
+    
     <>
-      <nav className="flex w-screen flex-row px-8 py-6 justify-between relative z-40">
+      <nav className="grid w-screen grid-cols-3 grid-rows-1 gap-4 relative z-40">
         {/* logo */}
         <section className="flex items-center">
           <a
@@ -28,9 +30,42 @@ const NavBar = () => {
           </a>
         </section>
 
-        {/* menu icon */}
+        {/* navigation links - desktop */}
+        <section className="hidden lg:flex items-center justify-center gap-x-8 font-['FavoritMono'] text-[#1E1E1E]">
+          <a
+            href="/services"
+            className="text-lg hover:text-gray-700 transition-colors"
+          >
+            services
+
+          </a> 
+          <a
+            href="/work"
+            className="text-lg hover:text-gray-700 transition-colors"
+          >
+            work
+          </a>
+          <a
+            href="/about"
+            className="text-lg hover:text-gray-700 transition-colors"
+          >
+            about
+          </a>
+          <a
+            href="/contact"
+            className="text-lg hover:text-gray-700 transition-colors"
+          >
+            contact
+          </a>
+        </section>
+
+        {/* spacer for centering logo */}
+        <div>
+        </div>
+
+        {/* menu icon - mobile */}
         <section
-          className="flex items-center gap-x-2 sm:gap-x-4 cursor-pointer"
+          className="flex justify-end items-center lg:hidden gap-x-2 sm:gap-x-4 cursor-pointer mr-6"
           onClick={toggleMenu}
         >
           <Menu
