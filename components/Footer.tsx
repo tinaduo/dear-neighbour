@@ -1,7 +1,7 @@
 import React from 'react';
 import Clock from './Clock';
 
-const Footer: React.FC = () => (
+const Footer: React.FC = () => (  
     <footer className="flex flex-col py-8 px-4 w-screen h-fit relative bg-[#1e1e1e]">
         <section className='flex flex-col gap-6'>
         <h1 className="text-6xl font-medium font-['Roobert'] text-[#FAF8EF]"> 
