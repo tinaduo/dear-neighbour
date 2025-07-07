@@ -8,7 +8,7 @@ export default function Home() {
     <head>
       <title>dear neighbour</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/images/DN-logo.png" />
+      <link rel="icon" type="image/x-icon" href="/images/DN-logo-32x32.png" />
       <meta
         name="description"
         content="Dear Neighbour, We believe in small things with big meaning. The way a local shop feels like home. The way a handwritten note can say more than a billboard ever could. We believe in showing up for each other in the hard moments and the hopeful ones, because that’s how strong communities are built. The three of us met in school, but what connected us was bigger than design. We kept coming back to the same conversations: how to support others, how to create space for underrepresented voices, how to build something that gives back. That’s what dear neighbour is really about. We believe in collaboration over competition. In lifting each other up. In making things with heart, not ego. And most of all, we believe that when we care for our communities, they care for us right back."
@@ -147,6 +147,7 @@ export default function Home() {
                   alt="Circles Mockup"
                   className="w-fit h-fit object-cover rounded-lg"
                 ></img>
+                <div className="space-y-2 pt-4">
                 <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert']">
                   Circles
                 </h5>
@@ -156,12 +157,14 @@ export default function Home() {
                   VIEW PROJECT
                 </a>
                 </div>
+                </div>
                 <div>
                 <img
                   src="/images/melange/home-card.png"
                   alt="Melange Mockup"
                   className="w-fit h-fit object-cover rounded-lg"
                 ></img>
+                <div className="space-y-2 pt-4">
                 <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert']">
                   Mélange
                 </h5>
@@ -170,18 +173,21 @@ export default function Home() {
                 </p>
               </div>
               </div>
+              </div>
               <div className="cols-span-2">
                 <img
                   src="/images/harmony/home-card.jpg"
                   alt="Harmony Mockup"
                   className="w-[755.08px] h-[736.83px] object-cover rounded-lg"
                 ></img>
-                <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert']">
-                  Harmony
-                </h5>
-                <p className="justify-center text-stone-900 text-xl font-normal font-['FavoritMono'] underline">
-                  VIEW PROJECT
+                <div className="space-y-2 pt-4">
+                  <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert']">
+                    Harmony
+                  </h5>
+                  <p className="justify-center text-stone-900 text-xl font-normal font-['FavoritMono'] underline">
+                    VIEW PROJECT
                 </p>
+                </div>
               </div>
             </div>
         </section>

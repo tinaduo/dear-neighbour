@@ -15,9 +15,9 @@ const NavBar = () => {
 
     
     <>
-      <nav className="grid w-screen grid-cols-3 grid-rows-1 gap-4 relative z-40">
+      <nav className="grid w-screen grid-cols-3 grid-rows-1 gap-4 relative z-40 mt-10">
         {/* logo */}
-        <section className="flex items-center">
+        <section className="flex items-center ml-8">
           <a
             href="/"
             className="flex items-center gap-x-2 sm:gap-x-4"
@@ -25,7 +25,7 @@ const NavBar = () => {
           <img
             src="/images/DN-logo.png"
             alt="Dear Neighbor Logo"
-            className="w-32 h-auto object-cover"
+            className="w-fit h-16 object-cover"
           />
           </a>
         </section>
