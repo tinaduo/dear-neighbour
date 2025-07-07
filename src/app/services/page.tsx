@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Footer from "../../../components/Footer";
-import NavBar from "../../../components/NavBar";
 import ServicesSection from "../../../components/ServicesSection";
 
 export default function Services() {
   return (
     <>
-      <NavBar />
-      <main className="flex flex-col mx-4 items-center min-h-screen space-y-40 mb-16 2xl:mx-[195px]">
+      <main>
         <section className="flex flex-col items-center">
           <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
             What We Offer
