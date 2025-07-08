@@ -14,7 +14,6 @@ export default function Home() {
           content="Dear Neighbour, We believe in small things with big meaning. The way a local shop feels like home. The way a handwritten note can say more than a billboard ever could. We believe in showing up for each other in the hard moments and the hopeful ones, because that’s how strong communities are built. The three of us met in school, but what connected us was bigger than design. We kept coming back to the same conversations: how to support others, how to create space for underrepresented voices, how to build something that gives back. That’s what dear neighbour is really about. We believe in collaboration over competition. In lifting each other up. In making things with heart, not ego. And most of all, we believe that when we care for our communities, they care for us right back."
         />
       </head>
-      {/* <NavBar /> */}
       <main>
         <section className="flex flex-col md:flex-col-reverse items-center justify-center space-y-8">
           <img
@@ -206,7 +205,6 @@ export default function Home() {
           />
         </section>
       </main>
-      <Footer />
     </>
   );
 }
