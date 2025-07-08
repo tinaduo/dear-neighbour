@@ -12,7 +12,7 @@ export default function Services() {
           <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
             What We Offer
           </h1>
-          <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 max-w-8/12 text-gray">
+          <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 max-w-8/12 tracking-(--tracking-body) text-gray">
             Not sure where to begin? You’re not alone. We’ve broken things down
             to keep it simple — here’s how we can support your business, what
             each service means, and how it might help bring your ideas to life.

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu } from "iconoir-react";
 import { Xmark } from "iconoir-react";
 import LetterSwapForward from "@/fancy/components/text/letter-swap-forward-anim";
@@ -12,9 +12,34 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  return (
+  const handleMenuLinkClick = () => {
+    setIsMenuOpen(false);
+  };
 
-    
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) { 
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
+  return (
     <>
       <nav className="grid w-screen grid-cols-3 grid-rows-1 gap-4 relative z-40">
         {/* logo */}
@@ -116,9 +141,9 @@ const NavBar = () => {
         </section>
       </nav>
 
-      {/* menu overlay */}
+      {/* menu overlay - only show on mobile/tablet */}
       <div
-        className={`fixed inset-0 bg-[#FAF8EF] z-50 transition-transform duration-500 ease-in-out ${
+        className={`fixed inset-0 bg-[#FAF8EF] z-50 transition-transform duration-500 ease-in-out lg:hidden ${
           isMenuOpen ? "transform translate-y-0" : "transform -translate-y-full"
         }`}
       >
@@ -139,24 +164,35 @@ const NavBar = () => {
             <a
               href="/"
               className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              onClick={handleMenuLinkClick}
             >
               Home
             </a>
             <a
               href="/services"
               className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              onClick={handleMenuLinkClick}
             >
               services
             </a>
             <a
+              href="/work"
+              className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              onClick={handleMenuLinkClick}
+            >
+              work
+            </a>
+            <a
               href="/about"
               className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              onClick={handleMenuLinkClick}
             >
               about
             </a>
             <a
               href="/contact"
-              className="text-6xl  text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              onClick={handleMenuLinkClick}
             >
               Contact
             </a>
