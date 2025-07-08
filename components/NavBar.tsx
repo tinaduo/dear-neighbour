@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Menu } from "iconoir-react";
 import { Xmark } from "iconoir-react";
+import LetterSwapForward from "@/fancy/components/text/letter-swap-forward-anim";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,26 +37,65 @@ const NavBar = () => {
             href="/services"
             className="text-lg hover:text-gray-700 transition-colors"
           >
-            services
-
+            <LetterSwapForward
+              className="text-lg font-normal"
+              transition={{
+                duration: 0.35,
+                ease: "easeInOut",
+              }}
+              label="services"
+              staggerFrom={0}
+              staggerDuration={0.1}
+              reverse={false}
+            />
           </a> 
           <a
             href="/work"
             className="text-lg hover:text-gray-700 transition-colors"
           >
-            work
+            <LetterSwapForward
+              className="text-lg font-normal"
+              transition={{
+                duration: 0.35,
+                ease: "easeInOut",
+              }}
+              label="work"
+              staggerFrom={0}
+              staggerDuration={0.1}
+              reverse={false}
+            />
           </a>
           <a
             href="/about"
             className="text-lg hover:text-gray-700 transition-colors"
           >
-            about
+            <LetterSwapForward
+              className="text-lg font-normal"
+              transition={{
+                duration: 0.35,
+                ease: "easeInOut",
+              }}
+              label="about"
+              staggerFrom={0}
+              staggerDuration={0.1}
+              reverse={false}
+            />
           </a>
           <a
             href="/contact"
             className="text-lg hover:text-gray-700 transition-colors"
           >
-            contact
+            <LetterSwapForward
+              className="text-lg font-normal"
+              transition={{
+                duration: 0.35,
+                ease: "easeInOut",
+              }}
+              label="contact"
+              staggerFrom={0}
+              staggerDuration={0.1}
+              reverse={false}
+            />
           </a>
         </section>
 
