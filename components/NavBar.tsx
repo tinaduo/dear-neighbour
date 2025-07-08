@@ -12,13 +12,15 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Close menu when clicking on menu links
   const handleMenuLinkClick = () => {
     setIsMenuOpen(false);
   };
 
+  // Close menu on window resize to desktop size
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) { 
+      if (window.innerWidth >= 1024) { // lg breakpoint
         setIsMenuOpen(false);
       }
     };
@@ -27,6 +29,7 @@ const NavBar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Prevent body scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -34,6 +37,7 @@ const NavBar = () => {
       document.body.style.overflow = 'unset';
     }
 
+    // Cleanup on unmount
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -124,20 +128,15 @@ const NavBar = () => {
           </a>
         </section>
 
-        {/* spacer for centering logo */}
-        <div>
-        </div>
-
-        {/* menu icon - mobile */}
-        <section
-          className="flex justify-end items-center lg:hidden gap-x-2 sm:gap-x-4 cursor-pointer mr-6"
-          onClick={toggleMenu}
-        >
-          <Menu
-            width={32}
-            height={32}
-            strokeWidth={2}
-          />
+        {/* spacer for centering on desktop, menu icon on mobile */}
+        <section className="flex justify-end items-center gap-x-2 sm:gap-x-4 mr-6">
+          <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
+            <Menu
+              width={32}
+              height={32}
+              strokeWidth={2}
+            />
+          </div>
         </section>
       </nav>
 
