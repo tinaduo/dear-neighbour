@@ -1,9 +1,16 @@
-import NavBar from "../../../components/NavBar";
+import ProjectBlock from "../../../components/ProjectBlock";
 
 export default function Work() {
   return(
-    <>
-      
-    </>
+    <main>
+      <h1 className="text-center justify-center text-8xl font-medium font-['Roobert'] mb-10">
+        Our Work
+      </h1>
+      <section className="grid grid-cols-2 gap-4">
+        <ProjectBlock name={"Harmony"} url={"harmony"} wide={true} image={"/images/harmony/home-card.jpg"} copy={"An app designed to support caregivers by simplifying tasks, building connections, and empowering families with meaningful tools."}/>
+        <ProjectBlock name={"Circles"} url={"circles"} image={"/images/circles/home-card.png"} copy={"An app designed to simplify sharing with friends by making it more private, meaningful, and true to real life."}/>
+        <ProjectBlock name={"Mélange"} url={"melange"} image={"/images/melange/home-card.png"} copy={"A website specializing in contemporary art prints and posters by emerging global artists."}/>
+      </section>
+    </main>
   )
 }

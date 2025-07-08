@@ -9,9 +9,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="font-['FavoritMono']">
         <NavBar/>
-        <main className="antialiased flex flex-col mx-4 items-center justify-center min-h-screen space-y-40 my-16 2xl:mx-[195px]">
+        <main className="antialiased flex flex-col mx-4 items-center justify-start min-h-screen space-y-40 my-16 2xl:mx-[195px]">
           {children}
         </main>
       </body>
