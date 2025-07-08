@@ -7,12 +7,12 @@ export default function Services() {
   return (
     <>
       <NavBar />
-      <main className="flex flex-col mx-4 items-center min-h-screen space-y-40 mb-16 2xl:mx-[195px]">
+      <main className="flex flex-col mx-4 items-center justify-center min-h-screen space-y-40 my-16 2xl:mx-[195px]">
         <section className="flex flex-col items-center">
           <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
             What We Offer
           </h1>
-          <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 max-w-8/12 tracking-(--tracking-body) text-gray">
+          <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 max-w-8/12 tracking-tighter text-gray">
             Not sure where to begin? You’re not alone. We’ve broken things down
             to keep it simple — here’s how we can support your business, what
             each service means, and how it might help bring your ideas to life.

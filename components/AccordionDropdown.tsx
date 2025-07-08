@@ -28,11 +28,11 @@ const AccordionDropdown = (props: Props) => {
         onClick={toggleOpen}
         className="cursor-pointer text-3xl text-dark-gray items-center flex w-full font-medium group"
       >
-        <p className="flex-1 text-start transition-colors duration-300 group-hover:text-opacity-80">
+        <p className="flex-1 text-start transition-colors duration-300 group-hover:text-opacity-80 tracking-tighter">
           {props.section.title.toUpperCase()}
         </p>
         <p
-          className={`text-5xl pb-2 transition-all duration-500 ease-out transform origin-center ${
+          className={`text-5xl tracking-tighter pb-2 transition-all duration-500 ease-out transform origin-center ${
             isOpened ? "rotate-180 scale-110" : "rotate-0 scale-100"
           }`}
         >
@@ -41,7 +41,7 @@ const AccordionDropdown = (props: Props) => {
       </button>
       <ul
         ref={contentRef}
-        className="overflow-hidden transition-all duration-500 ease-out"
+        className="overflow-hidden transition-all duration-500 ease-out tracking-tighter"
         style={{
           maxHeight: isOpened ? `${contentHeight}px` : "0px",
           opacity: isOpened ? 1 : 0,
@@ -51,7 +51,7 @@ const AccordionDropdown = (props: Props) => {
         {props.section.dropdownItems.map((item, i) => (
           <li
             key={`${i} dropdown item`}
-            className="text-dark-gray text-lg transition-all duration-300 ease-out font-['FavoritMono']"
+            className="text-dark-gray text-lg transition-all duration-300 ease-out font-['FavoritMono'] tracking-tighter"
             style={{
               transitionDelay: isOpened ? `${i * 50}ms` : "0ms",
             }}

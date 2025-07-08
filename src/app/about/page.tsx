@@ -5,14 +5,14 @@ export default function About() {
   return (
     <>
       <NavBar />
-      <main className="mx-4 space-y-40 flex flex-col items-center justify-center min-h-screen my-16 2xl:mx-[195px]">
+      <main className="mx-4 space-y-20 flex flex-col items-center justify-center min-h-screen my-16 2xl:mx-[195px]">
         <section className="flex flex-col">
           <section>
             <div className="flex flex-col items-center justify-center gap-8">
               <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
                 Meet Your Neighbours!
               </h1>
-              <p className="text-center text-xl md:w-[600px] font-['FavoritMono'] text-gray">
+              <p className="text-center text-xl md:w-[600px] font-['FavoritMono'] tracking-tighter text-gray">
                 Just a small team trying to make things that bring people a
                 little closer. To their neighbourhoods, their stories, and each
                 other &lt;3
@@ -31,8 +31,8 @@ export default function About() {
           />
         </section>
 
-        <section className="flex flex-col justify-start mb:w-[300px]">
-          <p className="justify-center text-gray text-xl font-['FavoritMono']">
+        <section className="flex flex-col justify-start space-y-12 tracking-tighter">
+          <p className="justify-center text-gray text-xl font-['FavoritMono'] w-[770px]">
             Dear Neighbour,
             <br />
             <br />
