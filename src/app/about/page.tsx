@@ -4,8 +4,8 @@ import NavBar from "../../../components/NavBar";
 export default function About() {
   return (
     <>
-      <NavBar />
-      <main className="mx-4 space-y-40 flex flex-col items-center justify-center min-h-screen my-16 2xl:mx-[195px]">
+      {/* <NavBar /> */}
+      <main>
         <section className="flex flex-col">
           <section>
             <div className="flex flex-col items-center justify-center gap-8">
@@ -74,7 +74,7 @@ export default function About() {
         </section>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -141,7 +141,7 @@ export default function Services() {
           </div>
         </section>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
