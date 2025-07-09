@@ -25,8 +25,8 @@ export default function Home() {
             className="mx-auto mb-8 block md:hidden w-full h-auto object-cover"
           />
           <img
-            src="/images/placeholder/desktop-hero.png"
-            alt="Neighbourhood Hero"
+            src="/images/postcards/home-hero-desktop-img.png"
+            alt="Dear Neighbourhood Hero"
             width={1200}
             height={400}
             className="hidden md:block w-full h-auto object-cover rounded-lg"
@@ -36,12 +36,10 @@ export default function Home() {
               Dear Neighbour,
             </h1>
             <p className="text-center text-lg md:text-xl font-['FavoritMono'] mt-4 mb-8 md:w-6/12">
-              You’ve got a story worth sharing and we’re here to help you tell
-              it in your own way.
+                You’ve got a story worth sharing — and we’re here to help you tell it in your own way.
               <br className="md:hidden block" />
               <br className="md:hidden block" />
-              We bring branding, design, and a little local magic to small
-              Canadian businesses who’ve got something to say.
+                We bring branding, design, and a little local magic to small Canadian businesses who’ve got something to say.
             </p>
           </div>
         </section>
@@ -49,8 +47,8 @@ export default function Home() {
         {/* services section */}
         <section className="flex flex-col 2xl:flex-row-reverse 2xl:justify-between 2xl:items-center">
           <img
-            className="w-[585px] h-[600px] rounded-lg"
-            src="https://placehold.co/585x600"
+            className="w-[585px] h-[600px] rounded-lg object-cover "
+            src="/images/harmony/harmony-laptop.jpg"
           />
           <div className="2xl:pr-15">
             <h2 className="self-stretch justify-center text-[#1E1E1E] text-6xl font-medium font-['Roobert']">
@@ -196,7 +194,7 @@ export default function Home() {
               Your dear neighbour 💌
             </h2>
             <p className="text-[#1E1E1E] text-base font-medium font-['FavoritMono'] uppercase pt-2">
-              tina, chelsea, keona
+              tina, chelsea, keona, nathan, & Kyanna 
             </p>
           </div>
           <img
