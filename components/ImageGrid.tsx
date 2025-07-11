@@ -8,17 +8,17 @@ const ImageGrid = ({ size="", images }:{size:string, images:Array<any>}) => { //
             case "big":
                 return
             default:
-                return "grid grid-cols-5 grid-rows-4 gap-2 w-full"
+                return "grid grid-cols-2 md:grid-cols-5 grid-rows-4 gap-2 w-full"
         }
     }
-    function getImageStyle(imgSize) {
+    function getImageClasses(imgSize) {
         switch (imgSize) {
             case "wide":
-                return {gridColumn: "span 2", gridRow: "span 2"}
+                return "col-span-2 row-span-2"
             case "large":
-                return {gridColumn: "span 3", gridRow: "span 4"}
+                return "col-span-2 md:col-span-3 row-span-4"
             default:
-                return {gridColumn: "span 1", gridRow: "span 2"}
+                return "col-span-1 row-span-2"
         }
     }
 
@@ -27,7 +27,7 @@ const ImageGrid = ({ size="", images }:{size:string, images:Array<any>}) => { //
         <div className={styleClasses}>
             {images.map((image:any, i:number) => {
                 return(
-                    <img key={i} src={image.url} alt={image.alt} style={getImageStyle(image.size)} className="w-full h-full object-cover rounded-lg"/>
+                    <img key={i} src={image.url} alt={image.alt} className={`${getImageClasses(image.size)} w-full h-full object-cover rounded-lg`}/>
                 )
             })}
         </div>
