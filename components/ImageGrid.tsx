@@ -1,45 +1,35 @@
 import React from "react";
 
-const ImageGrid = ({ image1, image2, image3, image4}) => {
-    return (
-        <div className="grid grid-cols-5 grid-rows-4 gap-2 w-full h-[400px]">
-        {image1 && (
-            <div className="col-span-3 row-span-4 row-start-1 overflow-hidden">
-            <img
-                src={image1}
-                alt="Project image 1"
-                className="w-full h-full object-cover rounded-lg"
-            />
-            </div>
-        )}
+const ImageGrid = ({ size="", images }:{size:string, images:Array<any>}) => { //array of {image, size}
+    function getStyleClasses() {
+        switch (size) {
+            case "reverse":
+                return
+            case "big":
+                return
+            default:
+                return "grid grid-cols-5 grid-rows-4 gap-2 w-full h-[500px]"
+        }
+    }
+    function getImageStyle(imgSize) {
+        switch (imgSize) {
+            case "wide":
+                return {gridColumn: "span 2", gridRow: "span 2"}
+            case "large":
+                return {gridColumn: "span 3", gridRow: "span 4"}
+            default:
+                return {gridColumn: "span 1", gridRow: "span 2"}
+        }
+    }
 
-        {image4 && (
-        <div className="col-start-4 col-span-2 row-span-2 row-start-3">
-            <img
-            src={image4}
-            alt="Project image 4"
-            className="w-full h-full object-cover rounded-lg"
-            />
-        </div>
-        )}
-        {image3 && (
-        <div className="row-span-2 col-start-4 row-start-1 overflow-hidden">
-            <img
-            src={image3}
-            alt="Project image 3"
-            className="w-full h-full object-cover rounded-lg"
-            />
-        </div>
-        )}
-        {image2 && (
-        <div className="row-span-2 col-start-5 row-start-1 overflow-hidden">
-            <img
-            src={image2}
-            alt="Project image 2"
-            className="w-full h-full object-cover rounded-lg"
-            />
-        </div>
-        )}
+    const styleClasses = getStyleClasses();
+    return (
+        <div className={styleClasses}>
+            {images.map((image:any, i:number) => {
+                return(
+                    <img key={i} src={image.url} alt={image.alt} style={getImageStyle(image.size)} className="w-full h-full object-cover rounded-lg"/>
+                )
+            })}
         </div>
     );
 };

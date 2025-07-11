@@ -1,7 +1,7 @@
 import ImageGrid from "../../../../components/ImageGrid";
 import ProjectHero from "../../../../components/ProjectHero";
 
-export default function Harmony() {
+export default function Melange() {
   return (
     <main className="flex flex-col gap-16 px-4 md:px-16 lg:px-32 pt-16 pb-32">
       <ProjectHero
@@ -13,10 +13,12 @@ export default function Harmony() {
         heroImage="/images/melange/melange-hero.png"
       />
       <ImageGrid
-        image1={"/images/melange/melange-wordmark.png"}
-        image2={"/images/melange/rainbow-background.gif"}
-        image3={"/images/melange/melange-white-logo.png"}
-        image4={"/images/melange/melange-slogan.png"}
+        images={[
+          {url: "/images/melange/melange-wordmark.png", alt: "Project Image 1", size: "large"},
+          {url: "/images/melange/rainbow-background.gif", alt: "Project Image 2"},
+          {url: "/images/melange/melange-white-logo.png", alt: "Project Image 3"},
+          {url: "/images/melange/melange-slogan.png", alt: "Project Image 4", size: "wide"}
+        ]}
       />
     </main>
   );

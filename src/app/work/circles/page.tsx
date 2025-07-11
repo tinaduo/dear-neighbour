@@ -1,4 +1,4 @@
-export default function Harmony() {
+export default function Circles() {
   return(
     <div>
       Circles
