@@ -8,7 +8,7 @@ const ImageGrid = ({ size="", images }:{size:string, images:Array<any>}) => { //
             case "big":
                 return
             default:
-                return "grid grid-cols-5 grid-rows-4 gap-2 w-full h-[500px]"
+                return "grid grid-cols-5 grid-rows-4 gap-2 w-full"
         }
     }
     function getImageStyle(imgSize) {
