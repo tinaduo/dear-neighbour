@@ -67,7 +67,7 @@ export default function Circles() {
         }
       />
       video
-      <NextProject url="/work/melange/"/>
+      <NextProject project="Circles" url="/work/melange/"/>
     </main>
   )
 }

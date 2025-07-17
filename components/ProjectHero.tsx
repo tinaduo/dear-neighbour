@@ -3,7 +3,7 @@ import React from "react";
 const ProjectHero = ({ year, title, tags, paragraph1, paragraph2, heroImage}:
   {year:string, title:string, tags:Array<string>, paragraph1:string, paragraph2:string, heroImage:string}) => {
   return (
-    <section className="flex flex-col-reverse md:grid md:grid-cols-10 font-['FavoritMono'] gap-6">
+    <section className="flex flex-col-reverse md:grid md:grid-cols-10 font-['FavoritMono'] gap-12">
       <div className="md:col-span-6 flex flex-col">
         <div>
             <p className="text-gray">

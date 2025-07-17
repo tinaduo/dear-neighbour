@@ -73,7 +73,7 @@ export default function Melange() {
           {url: "/images/melange/melange14.png", alt: "Project Image 4", size: "square"},
         ]}
       />
-      <NextProject/>
+      <NextProject project="Mélange" url="/work/harmony"/>
     </main>
   );
 }
