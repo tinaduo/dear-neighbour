@@ -16,10 +16,10 @@ export default function Melange() {
       />
       <ImageGrid
         images={[
-          {url: "/images/melange/melange-wordmark.png", alt: "Project Image 1", size: "large"},
-          {url: "/images/melange/rainbow-background.gif", alt: "Project Image 2"},
-          {url: "/images/melange/melange-white-logo.png", alt: "Project Image 3"},
-          {url: "/images/melange/melange-slogan.png", alt: "Project Image 4", size: "wide"}
+          {url: "/images/melange/melange1.png", alt: "Project Image 1", size: "large"},
+          {url: "/images/melange/melange2.png", alt: "Project Image 2"},
+          {url: "/images/melange/melange3.png", alt: "Project Image 3"},
+          {url: "/images/melange/melange4.png", alt: "Project Image 4", size: "wide"}
         ]}
       />
       <CopyBlock
@@ -31,10 +31,10 @@ export default function Melange() {
       />
       <ImageGrid
         images={[
-          {url: "/images/melange/melange-wordmark.png", alt: "Project Image 1", size: "wide"},
-          {url: "/images/melange/melange-white-logo.png", alt: "Project Image 2", size: "large"},
-          {url: "/images/melange/melange-white-logo.png", alt: "Project Image 3"},
-          {url: "/images/melange/melange-slogan.png", alt: "Project Image 4"}
+          {url: "/images/melange/melange5.png", alt: "Project Image 5", size: "wide"},
+          {url: "/images/melange/melange6.png", alt: "Project Image 6", size: "large"},
+          {url: "/images/melange/melange7.png", alt: "Project Image 7"},
+          {url: "/images/melange/melange8.png", alt: "Project Image 8"}
         ]}
       />
       <CopyBlock
@@ -50,8 +50,8 @@ export default function Melange() {
       <ImageGrid
         size="wide"
         images={[
-          {url: "/images/melange/melange-wordmark.png", alt: "Project Image 1", size: "half"},
-          {url: "/images/melange/melange-slogan.png", alt: "Project Image 2", size: "half"},
+          {url: "/images/melange/melange9.png", alt: "Project Image 9", size: "half"},
+          {url: "/images/melange/melange10.png", alt: "Project Image 10", size: "half"},
         ]}
       />
       <CopyBlock
@@ -67,10 +67,10 @@ export default function Melange() {
       <ImageGrid
         size="tall"
         images={[
-          {url: "/images/melange/melange-wordmark.png", alt: "Project Image 1", size: "half"},
-          {url: "/images/melange/melange-slogan.png", alt: "Project Image 2", size: "half"},
-          {url: "/images/melange/melange-slogan.png", alt: "Project Image 3", size: "large"},
-          {url: "/images/melange/melange-white-logo.png", alt: "Project Image 4", size: "square"},
+          {url: "/images/melange/melange11.png", alt: "Project Image 1", size: "half"},
+          {url: "/images/melange/melange12.png", alt: "Project Image 2", size: "half"},
+          {url: "/images/melange/melange13.png", alt: "Project Image 3", size: "large"},
+          {url: "/images/melange/melange14.png", alt: "Project Image 4", size: "square"},
         ]}
       />
       <NextProject/>
