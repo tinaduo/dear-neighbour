@@ -23,6 +23,7 @@ export default function Melange() {
         ]}
       />
       <CopyBlock
+        number={1}
         header={"Our Discovery"}
         content={
           <p>Getting seen as an emerging creative is hard, and it’s just as tough discovering art that feels personal and true to people. We found an opportunity to create a space that celebrates diverse styles and perspectives, while also helping people find pieces that speak to them.</p>
@@ -38,7 +39,7 @@ export default function Melange() {
       />
       <CopyBlock
         number={2}
-        header={"What we learned"}
+        header={"What We Learned"}
         content={
           <div className="flex flex-col gap-4">
             <p>We noticed that while many poster platforms offer some variety, they often lean into a specific visual style, whether that’s bold illustration, maximalism, or editorial photography. Those aesthetics resonate with a lot of people, but we wanted to create something that felt even more personal.</p>
@@ -55,7 +56,7 @@ export default function Melange() {
       />
       <CopyBlock
         number={3}
-        header={"What we created"}
+        header={"What We Created"}
         content={
           <div className="flex flex-col gap-4">
             <p>We built Mélange to feel like a creative destination—one that puts intention, individuality, and discovery at the centre. Every detail, from the curated artist lineup to the tone of the copy, was designed to make people feel seen in their choices.</p>

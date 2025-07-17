@@ -11,7 +11,7 @@ export default function ProjectBlock({name, copy, image, url, wide=false}) {
       <div className="flex flex-col items-start justify-start gap-3">
         <h3 className="text-3xl font-['Roobert'] font-medium mt-3">{name}</h3>
         <p className="text-l text-gray-700 md:max-w-1/2">{copy}</p>
-        <Link className="italic underline text-xl mt-2 hover:text-gray-500" href={`/work/${url}`}>VIEW PROJECT</Link>
+        <Link className="italic underline text-xl mt-2 hover:text-gray-500" href={url}>VIEW PROJECT</Link>
       </div>
     </div>
   )

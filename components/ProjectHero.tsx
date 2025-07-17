@@ -38,11 +38,11 @@ const ProjectHero = ({ year, title, tags, paragraph1, paragraph2, heroImage}:
             </p>
         </div>
       </div>
-      <div className="col-span-4 flex justify-center items-center">
+      <div className="col-span-4 flex justify-center items-end">
         <img
         src={heroImage}
         alt={`${title} hero`}
-        className="w-full md:w-[90%] object-cover rounded-lg"
+        className="w-full object-cover rounded-lg"
         />
       </div>
     </section>
