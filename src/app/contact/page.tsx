@@ -1,0 +1,58 @@
+import Footer from "../../../components/Footer";
+import NavBar from "../../../components/NavBar";
+
+export default function Services() {
+    return (
+        <>
+            <NavBar />
+            <main className="flex flex-col mx-4 items-center justify-center min-h-screen space-y-40 my-16 2xl:mx-[195px]">
+                <section className="flex flex-col items-center">
+                    <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
+                        Let’s Work Together!
+                    </h1>
+                    <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 max-w-8/12 tracking-tighter text-gray">
+                        Have a question, a thought, or something you'd like to share? Say hello and we’ll take it from there!
+                    </p>
+                </section>
+
+
+                <section className="flex flex-col items-center space-y-8">
+                    <div className="relative h-screen">
+                        <img src="/images/postcards/sticky-note.png" alt="Sticky Note" className="absolute inset-0 scale-175 object-cover z-0" />
+                        <div className="relative z-10">
+                            <div className="flex flex-col items-center justify-center mt-32 space-y-4">
+                                <div>
+                                <h6
+                                    className="opacity-80 text-center justify-center text-stone-900/75 text-2xl font-['FavoritMono']"
+                                >
+                                    EMAIL                         
+                                </h6>
+                                    <a
+                                        href="mailto:dear.neighbour@outlook.ca"
+                                        className="text-darkgrey hover:underline text-4xl font-['Roobert'] text-center"
+                                    >
+                                        dear.neighbour@outlook.ca
+                                    </a>
+                                </div>
+                                <div className="flex flex-col items-center mt-8">
+                                    <h6
+                                        className="opacity-80 text-center justify-center text-stone-900/75 text-2xl font-['FavoritMono']"
+                                    >
+                                        INSTAGRAM                         
+                                    </h6>
+                                        <a
+                                            href="https://www.instagram.com/@_dearneighbour/"
+                                            className="text-darkgrey hover:underline text-4xl font-['Roobert'] text-center"
+                                        >
+                                            @_dearneighbour
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </main>
+            <Footer />
+        </>
+    );
+}
