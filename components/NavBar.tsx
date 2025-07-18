@@ -129,7 +129,7 @@ const NavBar = () => {
         </section>
 
         {/* spacer for centering on desktop, menu icon on mobile */}
-        <section className="flex justify-end items-center gap-x-2 sm:gap-x-4 mr-6">
+        <section className="flex justify-end items-center gap-x-2 sm:gap-x-4 mr-6 col-start-3">
           <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
             <Menu
               width={32}

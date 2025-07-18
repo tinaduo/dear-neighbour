@@ -4,7 +4,6 @@ import NavBar from "../../../components/NavBar";
 export default function About() {
   return (
     <>
-      {/* <NavBar /> */}
       <main>
         <section className="flex flex-col">
           <section>
@@ -12,7 +11,7 @@ export default function About() {
               <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
                 Meet Your Neighbours!
               </h1>
-              <p className="text-center text-xl md:w-[600px] font-['FavoritMono'] text-gray">
+              <p className="text-center text-xl md:w-[600px] font-['FavoritMono'] tracking-tighter text-gray">
                 Just a small team trying to make things that bring people a
                 little closer. To their neighbourhoods, their stories, and each
                 other &lt;3
@@ -31,8 +30,8 @@ export default function About() {
           />
         </section>
 
-        <section className="flex flex-col justify-start mb:w-[300px]">
-          <p className="justify-center text-gray text-xl font-['FavoritMono']">
+        <section className="flex flex-col justify-start space-y-12 tracking-tighter">
+          <p className="justify-center text-gray text-xl font-['FavoritMono'] w-[770px]">
             Dear Neighbour,
             <br />
             <br />
