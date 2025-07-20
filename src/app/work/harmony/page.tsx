@@ -5,7 +5,7 @@ import ProjectHero from "../../../../components/ProjectHero";
 
 export default function Harmony() {
   return(
-    <main className="flex flex-col gap-32 px-4 md:px-16 lg:px-32 pt-16 pb-32">
+    <main className="flex flex-col gap-16 md:gap-32 px-4 md:px-16 lg:px-32 pt-16 pb-32">
       <ProjectHero
         year="2024"
         title={"Harmony"}
