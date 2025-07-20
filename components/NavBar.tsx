@@ -50,7 +50,7 @@ const NavBar = () => {
         <section className="flex items-center">
           <a
             href="/"
-            className="flex items-center gap-x-2 sm:gap-x-4"
+            className="flex items-center gap-x-2 sm:gap-x-4 hover:-rotate-12 transition-transform duration-300"
           >
           <img
             src="/images/DN-logo.png"
@@ -69,7 +69,7 @@ const NavBar = () => {
             <LetterSwapForward
               className="text-lg font-normal"
               transition={{
-                duration: 0.35,
+                duration: 0.5,
                 ease: "easeInOut",
               }}
               label="services"
@@ -85,7 +85,7 @@ const NavBar = () => {
             <LetterSwapForward
               className="text-lg font-normal"
               transition={{
-                duration: 0.35,
+                duration: 0.5,
                 ease: "easeInOut",
               }}
               label="work"
@@ -101,7 +101,7 @@ const NavBar = () => {
             <LetterSwapForward
               className="text-lg font-normal"
               transition={{
-                duration: 0.35,
+                duration: 0.5,
                 ease: "easeInOut",
               }}
               label="about"
@@ -117,7 +117,7 @@ const NavBar = () => {
             <LetterSwapForward
               className="text-lg font-normal"
               transition={{
-                duration: 0.35,
+                duration: 0.5,
                 ease: "easeInOut",
               }}
               label="contact"
