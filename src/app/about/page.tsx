@@ -26,12 +26,12 @@ export default function About() {
           <img
             src="/images/about/team-polaroids.png"
             alt="Team Polaroids"
-            className="block lg:hidden mx-auto mt-8"
+            className="block lg:hidden mx-auto w-auto mt-8"
           />
         </section>
 
-        <section className="flex flex-col justify-start space-y-12 tracking-tighter">
-          <p className="justify-center text-gray text-xl font-['FavoritMono'] w-[770px]">
+        <section className="flex flex-col items-center space-y-12 tracking-tighter">
+          <p className="text-gray text-xl font-['FavoritMono'] lg:w-[770px]">
             Dear Neighbour,
             <br />
             <br />
@@ -58,7 +58,7 @@ export default function About() {
             And most of all, we believe that when we care for our communities,
             they care for us right back.
           </p>
-          <section className="flex flex-col gap-8">
+          <section className="flex flex-col gap-8 w-full lg:w-[770px] items-start">
             <div>
               <h2 className="text-[#1E1E1E] text-4xl font-medium font-['Roobert']">
                 With love,

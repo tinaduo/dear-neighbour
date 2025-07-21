@@ -26,7 +26,7 @@ const AccordionDropdown = (props: Props) => {
     <div className="border-t-[1.5px] last-of-type:border-b-[1.5px] py-2 border-dark-gray">
       <button
         onClick={toggleOpen}
-        className="cursor-pointer text-3xl text-dark-gray items-center flex w-full font-medium group"
+        className="cursor-pointer text-3xl text-dark-gray items-center flex w-full group"
       >
         <p className="flex-1 text-start transition-colors duration-300 group-hover:text-opacity-80 tracking-tighter">
           {props.section.title.toUpperCase()}

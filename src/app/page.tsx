@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/images/DN-logo.png" />
         <meta
           name="description"
-          content="Dear Neighbour, We believe in small things with big meaning. The way a local shop feels like home. The way a handwritten note can say more than a billboard ever could. We believe in showing up for each other in the hard moments and the hopeful ones, because that’s how strong communities are built. The three of us met in school, but what connected us was bigger than design. We kept coming back to the same conversations: how to support others, how to create space for underrepresented voices, how to build something that gives back. That’s what dear neighbour is really about. We believe in collaboration over competition. In lifting each other up. In making things with heart, not ego. And most of all, we believe that when we care for our communities, they care for us right back."
+          content="Dear Neighbor is a design studio that helps small Canadian businesses tell their stories through branding, design, and digital marketing."
         />
       </head>
       <main>
@@ -38,7 +38,7 @@ export default function Home() {
                 You’ve got a story worth sharing — and we’re here to help you tell it in your own way.
               <br className="md:hidden block" />
               <br className="md:hidden block" />
-                We bring branding, design, and a little local magic to small Canadian businesses who’ve got something to say.
+                {" "}We bring branding, design, and a little local magic to small Canadian businesses who’ve got something to say.
             </p>
           </div>
         </section>
@@ -71,7 +71,7 @@ export default function Home() {
               </div>
               <div className="p-2 outline-1 outline-[#1E1E1E] outline-dashed justify-center items-center w-fit">
                 <p className="text-center justify-center text-[#1E1E1E] text-sm font-normal font-['FavoritMono'] uppercase">
-                  Print Collateral
+                  Print Materials
                 </p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
             </p>
             <a
               href="/"
-              className="justify-center bg-[#1E1E1E] text-[#FAF8EF] text-xl uppercase font-['FavoritMono'] px-4 py-2 w-fit hover:bg-[#FAF8EF] hover:text-[#1E1E1E] transition-colors duration-300"
+              className="justify-center bg-[#1E1E1E] text-[#FAF8EF] text-xl rounded-lg font-['FavoritMono'] px-4 py-2 w-fit hover:bg-[#FAF8EF] hover:text-[#1E1E1E] transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -96,40 +96,15 @@ export default function Home() {
         </section>
 
         {/* work section */}
-        <section className="flex flex-col space-y-24">
+        <section className="flex flex-col space-y-12">
           <div className="flex flex-col md:flex-row items-center">
-            <img
-              className="w-[585px] h-[600px] md:block"
-              src="https://placehold.co/585x600"
-            />
-            <div className="md:pl-15 cols-span-2">
-              <h2 className="self-stretch justify-center text-[#1E1E1E] text-6xl font-medium font-['Roobert']">
-                Our Recent Work
+            <div className="flex flex-col items-center text-center">
+              <h2 className="justify-center text-[#1E1E1E] text-6xl font-medium font-['Roobert']">
+                Recent Work
               </h2>
-              <p className="text-lg font-['FavoritMono'] mt-4 mb-8">
-                We started as a group of friends with a shared love for design —
-                but what really brought us together was a deeper belief in
-                community. In the people behind small businesses. In creating
-                something that helps others feel seen, supported, and
-                celebrated.
-                <br />
-                <br />
-                What began as school projects slowly became something more: a
-                way for us to give back, to build with purpose, and to lift each
-                other up through our work.
-                <br />
-                <br />
-                <span className="font-bold font-['FavoritMono']">
-                  Here are a few of the pieces we’ve loved creating together!
-                </span>
+              <p className="text-lg text-center font-['FavoritMono'] mt-4 mb-4 md:w-6/12">
+              You’ve got a story worth sharing — and we’re here to help you tell it in your own way. We bring branding, design, and a little local magic to small Canadian businesses who’ve got something to say.
               </p>
-              <a
-                href="/"
-                className="justify-center bg-[#1E1E1E] text-[#FAF8EF] text-xl uppercase font-['FavoritMono'] px-4 py-2 w-fit hover:bg-[#FAF8EF] hover:text-[#1E1E1E] hover:outline-1 hover:outline-[#1E1E1E] hover:outline-dashed transition-colors duration-300"
-                rel="noopener noreferrer"
-              >
-                See our Projects →
-              </a>
             </div>
           </div>
           <div className="grid-cols-2 gap-4 lg:grid hidden">
@@ -168,7 +143,7 @@ export default function Home() {
               <img
                 src="/images/harmony/home-card.jpg"
                 alt="Harmony Mockup"
-                className="w-[755.08px] h-[736.83px] object-cover"
+                className="w-[755.08px] h-[736.83px] object-cover rounded-lg"
               ></img>
               <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert']">
                 Harmony
@@ -196,11 +171,7 @@ export default function Home() {
               tina, chelsea, keona, nathan, & Kyanna 
             </p>
           </div>
-          <img
-            src="/images/placeholder/mobile-footer.png"
-            alt="Conclusion Image"
-            className="w-screen pt-12 object-cover"
-          />
+  
         </section>
       </main>
     </>

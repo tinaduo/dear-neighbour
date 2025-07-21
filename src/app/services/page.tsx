@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Footer from "../../../components/Footer";
 import ServicesSection from "../../../components/ServicesSection";
+import Marquee from "react-fast-marquee";
 
 export default function Services() {
   return (
@@ -10,20 +10,54 @@ export default function Services() {
           <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
             What We Offer
           </h1>
-          <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 max-w-8/12 tracking-tighter text-gray">
+          <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 md:w-6/12 mx-16 tracking-tighter text-gray">
             Not sure where to begin? You’re not alone. We’ve broken things down
             to keep it simple — here’s how we can support your business, what
             each service means, and how it might help bring your ideas to life.
           </p>
-          <Image
-            src="/images/placeholder/service-hero.webp"
-            alt="Neighbourhood Logo"
-            width={1000}
-            height={400}
-            className="mx-auto mt-8"
-          />
-        </section>
-        <section className="flex flex-col gap-56">
+          </section>
+          <section className="flex justify-center items-center mb-20 w-screen">
+          <Marquee
+            className="w-fit h-fit flex items-center justify-center"
+            speed={50}
+            direction="right"
+            autoFill={true}
+            >
+            <div className="flex flex-row gap-2.5 items-center justify-center">
+              <img
+                src="/images/marquee/marquee1.png"
+                alt="Website Design's image"
+                className="w-[300px] h-[300px] object-cover rounded-lg pl-2.5"
+              />
+              <img
+                src="/images/marquee/marquee2.png"
+                alt="Branding's image"
+                className="w-[300px] h-[300px] object-cover rounded-lg"
+              />
+              <img
+                src="/images/marquee/marquee3.png"
+                alt="Digital Marketing's image"
+                className="w-[300px] h-[300px] object-cover rounded-lg"
+              />
+              <img
+                src="/images/marquee/marquee4.png"
+                alt="Print Materials's image"
+                className="w-[300px] h-[300px] object-cover rounded-lg"
+              />
+              <img
+                src="/images/marquee/marquee5.png"
+                alt="Website Design's image"
+                className="w-[300px] h-[300px] object-cover rounded-lg"
+              />
+              <img
+                src="/images/marquee/marquee6.png"
+                alt="Branding's image"
+                className="w-[300px] h-[300px] object-cover rounded-lg"
+              />
+            </div>
+          </Marquee>
+          </section>
+        <section className="flex flex-col gap-56 mx-16 md:mx-[200px]">
           <ServicesSection
             title="Website Design"
             desc="Your website is often the first place someone learns about your business — so it should feel like you. Whether you’re just starting out or refreshing what you’ve got, we can help you build a site that’s simple, inviting, and easy to update. From single-page sites to multi-page setups, we’ll make sure your online home tells your story clearly and confidently."
@@ -32,14 +66,16 @@ export default function Services() {
               {
                 title: "Starter",
                 dropdownItems: [
-                  "ILALKSJDLALKDJSKALDA",
-                  "ASLDAHDASKHKAHDSJK",
-                  "ASLDJAKLJDKLAJDKLA",
+                  "1-page site  (4-6 sections)",
+                  "Perfect for small businesses, artists, or pop-ups who need a simple, scrollable site to introduce themselves and their work. A single-page site is faster to build, easier to maintain, and a great way to share key info like your story, services, contact details, and social links all in one place.",
                 ],
               },
               {
                 title: "Basic",
-                dropdownItems: ["ILALKSJDLALKDJSKALDA", "ASLDAHDASKHKAHDSJK"],
+                dropdownItems: [
+                  "3-5 page site (6-12 sections)",
+                  "Great for businesses ready to grow or offer more detail. A multi-page site gives you space to break up your content, like having separate pages for services, testimonials, about, and contact. Visitors can find what they need quickly and clearly. It also gives you more room to shape your story and improve SEO."
+                ],
               },
             ]}
           />
@@ -49,19 +85,22 @@ export default function Services() {
             img="/images/circles/circles-billboard.png"
             sections={[
               {
-                title: "branding",
+                title: "Branding",
                 dropdownItems: [
+                  "Brand strategy",
+                  "Competitive analysis",
+                  "Messaging",
                   "Logos",
-                  "Brand Look & Feel (Fonts, Colours, Style direction)",
-                  "Brand Guide",
+                  "Full brand guide",
                 ],
               },
               {
                 title: "Rebranding",
                 dropdownItems: [
                   "Logos",
-                  "Brand Look & Feel (Fonts, Colours, Style direction)",
-                  "Brand Guide",
+                  "Brands look and feel (typography, colours)",
+                  "Branding Guide",
+                  "For new businesses or passion projects starting from scratch, we’ll help you build a brand that feels true to you—from the logo to the full visual system.",
                 ],
               },
             ]}
@@ -119,9 +158,8 @@ export default function Services() {
               </ul>
             </div>
           </div>
-        </section>
 
-        <section>
+          <section>
           <div className="flex flex-col justify-start items-center gap-8">
             <h1 className="text-center justify-center text-dark-gray text-8xl font-medium font-['Roobert']">
               Our door’s always open!
@@ -133,15 +171,15 @@ export default function Services() {
             </p>
             <a
               href="/contact"
-              className="justify-center bg-[#1E1E1E] text-[#FAF8EF] text-xl uppercase font-['FavoritMono'] px-4 py-2 w-fit hover:bg-[#FAF8EF] hover:text-[#1E1E1E] transition-colors duration-300 rounded-md"
+              className="justify-center bg-[#1E1E1E] text-[#FAF8EF] text-xl font-['FavoritMono'] px-4 py-2 w-fit hover:bg-[#FAF8EF] hover:text-[#1E1E1E] transition-colors duration-300 rounded-md"
               rel="noopener noreferrer"
             >
               Say Hello! → 
             </a>
           </div>
         </section>
+        </section>
       </main>
-      {/* <Footer /> */}
     </>
   );
 }
