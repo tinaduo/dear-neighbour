@@ -1,8 +1,3 @@
-import Image from "next/image";
-import Footer from "../../components/Footer";
-import NavBar from "../../components/NavBar";
-import ProjectHero from "../../components/ProjectHero";
-
 export default function Home() {
   return (
     <>
@@ -37,7 +32,7 @@ export default function Home() {
       {/* services section */}
       <section className="flex flex-col-reverse xl:grid xl:grid-cols-10 xl:justify-center xl:items-center gap-8">
         <div className="col-span-5">
-          <h2 className="justify-center text-[#1E1E1E] text-6xl font-medium font-['Roobert']">
+          <h2 className="text-[#1E1E1E] text-6xl font-medium font-['Roobert']">
             What We Offer
           </h2>
           <div className="flex flex-wrap justify-left gap-2 pt-4 w-8/12">
@@ -84,6 +79,22 @@ export default function Home() {
           className="rounded-lg object-cover col-span-4 col-start-7"
           src="/images/harmony/harmony-laptop.jpg"
         />
+      </section>
+
+      <section className="hidden md:grid grid-cols-9 relative">
+        <div className="col-span-5 z-2 pt-12 mb-12">
+          <img src="/images/home/paper.png" className="w-full"/>
+          <div className="absolute top-44 left-40">
+            <p className="font-light text-sm mb-6">dear neighbour</p>
+            <h2 className="text-[#1E1E1E] text-6xl font-medium font-['Roobert']">
+              Our Why
+            </h2>
+            <p className="w-3/7 mt-8 font-light">
+              We started as a group of friends with a shared love for design — but what really brought us together was a deeper belief in community, the people behind small businesses. In creating something that helps others feel seen, supported, and celebrated! 
+            </p>
+          </div>
+        </div>
+        <img src="/images/home/picture.png" className="w-full col-span-5 col-start-5 absolute top-0 z-1"/>
       </section>
 
       {/* work section */}

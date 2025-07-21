@@ -1,6 +1,6 @@
 export default function Services() {
     return (
-        <>
+        <div>
             <section className="flex flex-col items-center">
                 <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
                     Let’s Work Together!
@@ -10,7 +10,7 @@ export default function Services() {
                 </p>
             </section>
             <section className="flex flex-col items-center relative">
-                <img src="/images/postcards/sticky-note.png" alt="Sticky Note" className=" " />
+                <img src="/images/postcards/sticky-note.png" alt="Sticky Note"/>
                 <div className="flex flex-col items-center justify-center space-y-4 absolute bottom-0 top-0 pl-20">
                     <div>
                     <h6
@@ -39,7 +39,7 @@ export default function Services() {
                         </a>
                     </div>
                 </div>
-                </section>
-        </>
+            </section>
+        </div>
     );
 }

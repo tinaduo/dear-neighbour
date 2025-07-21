@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <>
+    <div>
       <section className="flex flex-col">
         <section>
           <div className="flex flex-col items-center justify-center gap-8">
@@ -25,7 +25,6 @@ export default function About() {
           className="block lg:hidden mx-auto w-auto mt-8"
         />
       </section>
-
       <section className="flex flex-col items-center space-y-12 tracking-tighter">
         <p className="text-gray text-xl font-['FavoritMono'] lg:w-[770px]">
           Dear Neighbour,
@@ -67,6 +66,6 @@ export default function About() {
           </div>
         </section>
       </section>
-    </>
+    </div>
   );
 }
