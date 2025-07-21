@@ -87,65 +87,55 @@ export default function Home() {
       </section>
 
       {/* work section */}
-      <section className="flex flex-col space-y-12">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="flex flex-col items-center text-center">
-            <h2 className="justify-center text-[#1E1E1E] text-6xl font-medium font-['Roobert']">
-              Recent Work
-            </h2>
-            <p className="text-lg text-center font-['FavoritMono'] mt-4 mb-4 md:w-6/12">
-              You’ve got a story worth sharing — and we’re here to help you tell it in your own way. We bring branding, design, and a little local magic to small Canadian businesses who’ve got something to say.
-            </p>
-          </div>
+      {/* couldnt be bothered to make components */}
+      <section className="flex flex-col gap-12">
+        <div className="hidden md:flex flex-col items-center">
+          <h2 className="justify-center text-[#1E1E1E] text-6xl font-medium font-['Roobert']">
+            Recent Work
+          </h2>
+          <p className="text-lg text-center font-['FavoritMono'] mt-4 w-1/2">
+            You’ve got a story worth sharing — and we’re here to help you tell it in your own way. We bring branding, design, and a little local magic to small Canadian businesses who’ve got something to say.
+          </p>
         </div>
-        <div className="grid-cols-2 gap-4 lg:grid hidden">
-          <div className="cols-span-2 space-y-7">
+        <div className="hidden md:grid grid-cols-2 grid-rows-2 gap-4">
+          <div>
             <img
-              src="/images/circles/home-card.png"
-              alt="Circles Mockup"
-              className="w-fit h-fit object-cover rounded-lg"
-            ></img>
-            <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert']">
-              Circles
-            </h5>
-            <a
-              href="/works/circles"
-              className="justify-center text-stone-900 text-xl font-normal font-['FavoritMono'] underline"
-            >
+              src={"/images/circles/home-card.png"}
+              alt={"Circles mockup"}
+              className="rounded-lg"
+            />
+            <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert'] mt-4">Circles</h5>
+            <a href="/work/circles" className="underline italic hover:text-gray-500">
+              VIEW PROJECT
+            </a>
+          </div>
+          <div className="row-span-2">
+            <img
+              src={"/images/harmony/home-card.png"}
+              alt={"Harmony mockup"}
+              className="rounded-lg"
+            />
+            <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert'] mt-4">Harmony</h5>
+            <a href="/work/harmony" className="underline italic hover:text-gray-500">
               VIEW PROJECT
             </a>
           </div>
           <div>
             <img
-              src="/images/melange/home-card.png"
-              alt="Melange Mockup"
-              className="w-fit h-fit object-cover rounded-lg"
-            ></img>
-            <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert']">
-              Mélange
-            </h5>
-            <p className="justify-center text-stone-900 text-xl font-normal font-['FavoritMono'] underline">
+              src={"/images/melange/home-card.png"}
+              alt={"Circles mockup"}
+              className="rounded-lg"
+            />
+            <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert'] mt-4">Mélange</h5>
+            <a href="/work/melange" className="underline italic hover:text-gray-500">
               VIEW PROJECT
-            </p>
+            </a>
           </div>
-        </div>
-        <div className="cols-span-2">
-          <img
-            src="/images/harmony/home-card.jpg"
-            alt="Harmony Mockup"
-            className="object-cover rounded-lg"
-          ></img>
-          <h5 className="text-[#1E1E1E] text-3xl font-medium font-['Roobert']">
-            Harmony
-          </h5>
-          <p className="justify-center text-stone-900 text-xl font-normal font-['FavoritMono'] underline">
-            VIEW PROJECT
-          </p>
         </div>
       </section>
 
       {/* conclusion section */}
-      <section className="flex flex-col gap-8">
+      <section className="flex flex-col gap-8 items-start w-full">
         <h2 className="text-[#1E1E1E] text-4xl font-medium font-['Roobert']">
           That’s us in a nutshell. Thanks for being here, and we can’t wait
           to learn more about you!
