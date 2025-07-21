@@ -1,6 +1,6 @@
 export default function Services() {
     return (
-        <main>
+        <>
             <section className="flex flex-col items-center">
                 <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
                     Let’s Work Together!
@@ -40,6 +40,6 @@ export default function Services() {
                     </div>
                 </div>
                 </section>
-        </main>
+        </>
     );
 }
