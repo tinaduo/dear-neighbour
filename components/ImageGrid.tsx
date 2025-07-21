@@ -17,7 +17,7 @@ const ImageGrid = ({ size="", images }:{size?:string, images:Array<Image>}) => {
                 return "grid-cols-2 grid-rows-1 md:grid-rows-2"
         }
     }
-    function getImageClasses(imgSize) {
+    function getImageClasses(imgSize:string) {
         switch (imgSize) {
             case "half":
                 return "col-span-2 md:col-span-5"
