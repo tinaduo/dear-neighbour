@@ -8,6 +8,32 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const comingsoon = true;
+
+  if (comingsoon) {
+    return(
+      <html lang="en">
+        <head>
+          <title>dear neighbour</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/images/DN-logo.png" />
+          <meta
+            name="description"
+            content="Dear Neighbor is a design studio that helps small Canadian businesses tell their stories through branding, design, and digital marketing."
+          />
+        </head>
+        <body className="font-['FavoritMono']">
+          <main className="antialiased container mx-auto flex flex-col px-4 items-center justify-start pt-16 pb-32 md:px-12">
+            <img src={"/images/DN-logo.png"}/>
+            <p>Dear neighbour,</p>
+            <p>Coming Soon!</p>
+          </main>
+        </body>
+      </html>
+    )
+  }
+
   return (
     <html lang="en">
       <head>
