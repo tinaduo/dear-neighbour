@@ -5,6 +5,15 @@ import ProjectHero from "../../../../components/ProjectHero";
 
 export default function Melange() {
   return (
+    <>
+    <head>
+      <title>Melange – A Platform for Diverse, Meaningful Art</title>
+      <meta name="description" content="A curated art platform that connects people with diverse artwork and helps artists get seen." />
+      <meta property="og:title" content="Melange | Dear Neighbour" />
+      <meta property="og:description" content="Connecting people to vibrant, diverse artwork—and helping artists get discovered." />
+      <meta property="og:image" content="images/seo/melange.png" />
+      <meta property="og:type" content="website" />
+    </head>
     <main className="flex flex-col gap-16 md:gap-32 px-4 md:px-16 lg:px-32 pt-16 pb-32">
       <ProjectHero
         year="2023"
@@ -75,5 +84,6 @@ export default function Melange() {
       />
       <NextProject project="Mélange" url="/work/harmony"/>
     </main>
+    </>
   );
 }

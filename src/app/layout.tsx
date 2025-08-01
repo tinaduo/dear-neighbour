@@ -13,11 +13,7 @@ export default function RootLayout({
       <head>
         <title>dear neighbour</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/images/DN-logo.png" />
-        <meta
-          name="description"
-          content="Dear Neighbor is a design studio that helps small Canadian businesses tell their stories through branding, design, and digital marketing."
-        />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="font-['FavoritMono']">
         <NavBar/>

@@ -1,7 +1,17 @@
 export default function Services() {
     return (
-        <div>
-            <section className="flex flex-col items-center">
+        <>
+            <head>
+                <title>Contact Dear Neighbour – Let’s Bring Your Vision to Life</title>
+                <meta name="description" content="Contact Dear Neighbour to discuss your next project. We work with small businesses to build branding, websites, and marketing that matter." />
+                <meta property="og:title" content="Contact | Dear Neighbour" />
+                <meta property="og:description" content="Let’s collaborate on something meaningful—branding, websites, and marketing for small businesses." />
+                <meta property="og:image" content="images/seo/home.png" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="[YOUR_PAGE_URL_HERE]" />
+            </head>
+            <div>
+                <section className="flex flex-col items-center">
                 <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
                     Let’s Work Together!
                 </h1>
@@ -41,5 +51,6 @@ export default function Services() {
                 </div>
             </section>
         </div>
+        </>
     );
 }

@@ -1,6 +1,17 @@
+import Head from 'next/head';
+
 export default function About() {
   return (
-    <div>
+    <>
+      <head>
+        <title>About Dear Neighbour – Meet the People Behind the Studio</title>
+        <meta name="description" content="Dear Neighbour is a small, values-driven design agency in Vancouver focused on building meaningful creative solutions for small businesses and communities." />
+        <meta property="og:title" content="About Us | Dear Neighbour" />
+        <meta property="og:description" content="Just a small team trying to make things that bring people a little closer. To their neighbourhoods, their stories, and each other." />
+        <meta property="og:image" content="/images/seo/home.png" />
+        <meta property="og:type" content="website" />
+      </head>
+      <div>
       <section className="flex flex-col">
         <section>
           <div className="flex flex-col items-center justify-center gap-8">
@@ -67,5 +78,6 @@ export default function About() {
         </section>
       </section>
     </div>
+    </>
   );
 }

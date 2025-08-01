@@ -1,10 +1,19 @@
 import Image from "next/image";
+import Head from "next/head";
 import ServicesSection from "../../../components/ServicesSection";
 import Marquee from "react-fast-marquee";
 
 export default function Services() {
   return (
-    <>
+  <>
+    <head>
+      <title>Design Services – Branding, Web, and Digital Marketing | Dear Neighbour</title>
+      <meta name="description" content="Discover how Dear Neighbour supports small businesses with branding, web design, and digital marketing—crafted to fit your voice and vision." />
+      <meta property="og:title" content="Our Design Services | Dear Neighbour" />
+      <meta property="og:description" content="From visual identity to responsive websites and digital strategy, we offer services that help small businesses grow authentically." />
+      <meta property="og:image" content="/images/seo/services.png" />
+      <meta property="og:type" content="website" />
+    </head>
       <main>
         <section className="flex flex-col items-center">
           <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">

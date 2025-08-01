@@ -1,6 +1,14 @@
 export default function Home() {
   return (
     <>
+    <head>
+      <title>Dear Neighbour – Vancouver Design Agency for Small Businesses</title>
+        <meta name="description" content="Dear Neighbour is a Vancouver-based design agency helping small businesses with branding, websites, and digital marketing that reflect who they are." />
+        <meta property="og:title" content="Dear Neighbour – Vancouver-Based Design Studio" />
+        <meta property="og:description" content="We help small businesses build authentic brands through thoughtful design, websites, and digital marketing tailored to their story." />
+        <meta property="og:image" content="/images/seo/home.png" />
+        <meta property="og:type" content="website" />
+    </head>
       <section className="flex flex-col md:flex-col-reverse items-center justify-center space-y-8">
         <img
           src="/images/placeholder/mobile-hero.png"

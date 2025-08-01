@@ -5,6 +5,15 @@ import ProjectHero from "../../../../components/ProjectHero";
 
 export default function Harmony() {
   return(
+    <>
+    <head>
+      <title>Harmony – A Caregiving App for Families</title>
+      <meta name="description" content="An app designed to support caregivers by simplifying tasks, building connections, and empowering families with meaningful tools." />
+      <meta property="og:title" content="Harmony | Dear Neighbour" />
+      <meta property="og:description" content="An app designed to support caregivers by simplifying tasks, building connections, and empowering families with meaningful tools." />
+      <meta property="og:image" content="/images/seo/harmony.png" />
+      <meta property="og:type" content="website" />
+    </head>
     <main className="flex flex-col gap-16 md:gap-32 px-4 md:px-16 lg:px-32 pt-16 pb-32">
       <ProjectHero
         year="2024"
@@ -68,5 +77,6 @@ export default function Harmony() {
       />
       <NextProject project="Harmony" url="/work/circles"/>
     </main>
+    </>
   )
 }

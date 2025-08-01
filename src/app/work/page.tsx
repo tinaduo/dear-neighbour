@@ -3,6 +3,14 @@ import ProjectBlock from "../../../components/ProjectBlock";
 export default function Work() {
   return(
     <main>
+<head>
+  <title>Work – Branding & Web Design Projects | Dear Neighbour</title>
+  <meta name="description" content="Explore our collection of branding, web design, and community-driven creative work made for real people and real impact." />
+  <meta property="og:title" content="Our Work | Dear Neighbour" />
+  <meta property="og:description" content="See how we’ve helped small businesses bring their ideas to life with creative branding, websites, and storytelling design." />
+  <meta property="og:image" content="/images/seo/our-work.png" />
+  <meta property="og:type" content="website" />
+</head>
       <h1 className="text-center justify-center text-8xl font-medium font-['Roobert'] mb-10">
         Our Work
       </h1>
