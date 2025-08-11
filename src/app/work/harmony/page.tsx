@@ -27,7 +27,7 @@ export default function Harmony() {
         size="wide"
         images={[
           {url: "/images/harmony/harmony1.png", alt: "img1", size:"half"},
-          {url: "/images/harmony/harmony1.png", alt: "img2", size:"half"}
+          {url: "/images/harmony/harmony12.png", alt: "img2", size:"half"}
         ]}
       />
       <CopyBlock
@@ -39,7 +39,8 @@ export default function Harmony() {
           </p>
         }
       />
-      <img src={"/images/harmony/harmony3.png"}/>
+    <iframe
+    className="w-full h-fit md:h-[500px]" src="https://www.youtube.com/embed/WyGaCjvrpS0?si=FMNPVjWUy78pHq0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <CopyBlock
         number={2}
         header="What We Learned"

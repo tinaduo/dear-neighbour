@@ -27,7 +27,7 @@ export default function Services() {
           </section>
           <section className="flex justify-center items-center mb-20 w-screen">
           <Marquee
-            className="w-fit h-fit flex items-center justify-center"
+            className="w-fit h-fit flex items-center justify-center rounded-lg"
             speed={50}
             direction="right"
             autoFill={true}
@@ -36,32 +36,32 @@ export default function Services() {
               <img
                 src="/images/marquee/marquee1.png"
                 alt="Website Design's image"
-                className="w-[300px] h-[300px] object-cover rounded-lg pl-2.5"
+                className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] object-cover rounded-lg pl-2.5"
               />
               <img
                 src="/images/marquee/marquee2.png"
                 alt="Branding's image"
-                className="w-[300px] h-[300px] object-cover rounded-lg"
+                className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] object-cover rounded-lg"
               />
               <img
                 src="/images/marquee/marquee3.png"
                 alt="Digital Marketing's image"
-                className="w-[300px] h-[300px] object-cover rounded-lg"
+                className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] object-cover rounded-lg"
               />
               <img
                 src="/images/marquee/marquee4.png"
                 alt="Print Materials's image"
-                className="w-[300px] h-[300px] object-cover rounded-lg"
+                className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] object-cover rounded-lg"
               />
               <img
                 src="/images/marquee/marquee5.png"
                 alt="Website Design's image"
-                className="w-[300px] h-[300px] object-cover rounded-lg"
+                className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] object-cover rounded-lg"
               />
               <img
                 src="/images/marquee/marquee6.png"
                 alt="Branding's image"
-                className="w-[300px] h-[300px] object-cover rounded-lg"
+                className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] object-cover rounded-lg"
               />
             </div>
           </Marquee>
