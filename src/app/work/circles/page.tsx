@@ -77,7 +77,12 @@ export default function Circles() {
         />
         <iframe
         className="w-full h-fit md:h-[500px]"
-        src="https://www.youtube.com/embed/wgsi1Cwpm-0?si=7vLdMdd4zJ-i9oGh"title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        src="https://www.youtube.com/embed/wgsi1Cwpm-0?si=7vLdMdd4zJ-i9oGh"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+        ></iframe>
         <NextProject project="Circles" url="/work/melange/"/>
       </main>
     </>

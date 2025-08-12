@@ -40,7 +40,7 @@ export default function Harmony() {
         }
       />
     <iframe
-    className="w-full h-fit md:h-[500px]" src="https://www.youtube.com/embed/WyGaCjvrpS0?si=FMNPVjWUy78pHq0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    className="w-full h-fit md:h-[500px]" src="https://www.youtube.com/embed/WyGaCjvrpS0?si=FMNPVjWUy78pHq0c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       <CopyBlock
         number={2}
         header="What We Learned"
