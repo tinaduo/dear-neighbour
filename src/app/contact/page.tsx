@@ -12,7 +12,7 @@ export default function Services() {
             </head>
             <div>
                 <section className="flex flex-col items-center">
-                <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
+                <h1 className="text-center justify-center text-6xl text-8xl font-medium font-['Roobert']">
                     Let’s Work Together!
                 </h1>
                 <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 max-w-8/12 tracking-tighter text-gray">

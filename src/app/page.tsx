@@ -25,7 +25,7 @@ export default function Home() {
           className="hidden md:block w-full h-auto object-cover rounded-lg"
         />
         <div className="flex flex-col items-center md:space-y-9">
-          <h1 className="text-center justify-center text-4xl lg:text-8xl font-medium font-['Roobert'] text-dark-gray">
+          <h1 className="text-center justify-center text-6xl lg:text-8xl font-medium font-['Roobert'] text-dark-gray">
             Dear Neighbour,
           </h1>
           <p className="text-center text-lg md:text-xl font-['FavoritMono'] mt-4 mb-8 md:w-6/12">
