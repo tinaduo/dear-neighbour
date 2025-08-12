@@ -14,7 +14,7 @@ export default function Services() {
       <meta property="og:image" content="/images/seo/services.png" />
       <meta property="og:type" content="website" />
     </head>
-      <main>
+      <main className="max-w-screen">
         <section className="flex flex-col items-center">
           <h1 className="text-center justify-center text-5xl md:text-8xl font-medium font-['Roobert']">
             What We Offer
