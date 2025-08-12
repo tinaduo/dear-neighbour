@@ -16,7 +16,7 @@ export default function Services() {
     </head>
       <main>
         <section className="flex flex-col items-center">
-          <h1 className="text-center justify-center text-6xl md:text-8xl font-medium font-['Roobert']">
+          <h1 className="text-center justify-center text-5xl md:text-8xl font-medium font-['Roobert']">
             What We Offer
           </h1>
           <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 md:w-6/12 mx-16 tracking-tighter text-gray">
