@@ -11,7 +11,7 @@ export default function Work() {
   <meta property="og:image" content="/images/seo/our-work.png" />
   <meta property="og:type" content="website" />
 </head>
-      <h1 className="text-center justify-center text-8xl font-medium font-['Roobert'] mb-10">
+      <h1 className="text-center justify-center text-4xl md:text-8xl font-medium font-['Roobert'] mb-10">
         Our Work
       </h1>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start">

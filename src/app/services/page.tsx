@@ -16,7 +16,7 @@ export default function Services() {
     </head>
       <main>
         <section className="flex flex-col items-center">
-          <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
+          <h1 className="text-center justify-center text-4xl md:text-8xl font-medium font-['Roobert']">
             What We Offer
           </h1>
           <p className="text-center text-xl font-['FavoritMono'] mt-10 mb-8 md:w-6/12 mx-16 tracking-tighter text-gray">
@@ -170,10 +170,10 @@ export default function Services() {
 
           <section>
           <div className="flex flex-col justify-start items-center gap-8">
-            <h1 className="text-center justify-center text-dark-gray text-8xl font-medium font-['Roobert']">
+            <h1 className="text-center justify-center text-dark-gray text-6xl md:text-8xl font-medium font-['Roobert']">
               Our door’s always open!
             </h1>
-            <p className="text-center justify-center text-gray text-lg font-['FavoritMono'] w-8/12">
+            <p className="text-center justify-center text-gray text-lg font-['FavoritMono'] md:w-8/12">
               Whether you have questions, an idea you're still working through,
               or just want to say hi — we're all ears. Reach out, and let’s chat
               about how we can bring your vision to life, one step at a time.

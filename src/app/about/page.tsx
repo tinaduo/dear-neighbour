@@ -15,10 +15,10 @@ export default function About() {
       <section className="flex flex-col">
         <section>
           <div className="flex flex-col items-center justify-center gap-8">
-            <h1 className="text-center justify-center text-8xl font-medium font-['Roobert']">
+            <h1 className="text-center justify-center text-6xl md:text-8xl font-medium font-['Roobert']">
               Meet Your Neighbours!
             </h1>
-            <p className="text-center text-xl md:w-[600px] font-['FavoritMono'] tracking-tighter text-gray">
+            <p className="text-center text-xl md:w-6/12 font-['FavoritMono'] tracking-tighter text-gray">
               Just a small team trying to make things that bring people a
               little closer. To their neighbourhoods, their stories, and each
               other &lt;3
@@ -36,8 +36,8 @@ export default function About() {
           className="block lg:hidden mx-auto w-auto mt-8"
         />
       </section>
-      <section className="flex flex-col items-center space-y-12 tracking-tighter">
-        <p className="text-gray text-xl font-['FavoritMono'] lg:w-[770px]">
+      <section className="flex flex-col items-center space-y-12 md:px-48 tracking-tighter">
+        <p className="text-gray text-xl font-['FavoritMono'] pt-12 md:pt-0">
           Dear Neighbour,
           <br />
           <br />
@@ -64,7 +64,7 @@ export default function About() {
           And most of all, we believe that when we care for our communities,
           they care for us right back.
         </p>
-        <section className="flex flex-col gap-8 w-full lg:w-[770px] items-start">
+        <section className="flex flex-col gap-8 w-full items-start">
           <div>
             <h2 className="text-[#1E1E1E] text-4xl font-medium font-['Roobert']">
               With love,
