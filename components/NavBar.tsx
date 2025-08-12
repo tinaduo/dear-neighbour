@@ -162,35 +162,35 @@ const NavBar = () => {
           <div className="flex flex-col items-center space-y-12 text-center font-['FavoritMono'] lowercase">
             <a
               href="/"
-              className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              className="text-4xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
               onClick={handleMenuLinkClick}
             >
               Home
             </a>
             <a
               href="/services"
-              className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              className="text-4xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
               onClick={handleMenuLinkClick}
             >
               services
             </a>
             <a
               href="/work"
-              className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              className="text-4xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
               onClick={handleMenuLinkClick}
             >
               work
             </a>
             <a
               href="/about"
-              className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              className="text-4xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
               onClick={handleMenuLinkClick}
             >
               about
             </a>
             <a
               href="/contact"
-              className="text-6xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
+              className="text-4xl text-center text-[#1E1E1E] hover:text-gray-700 transition-colors"
               onClick={handleMenuLinkClick}
             >
               Contact
